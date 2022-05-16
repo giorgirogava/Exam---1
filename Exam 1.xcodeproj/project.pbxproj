@@ -13,6 +13,8 @@
 		35F261E1283250BB00AF7FAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35F261DF283250BB00AF7FAD /* Main.storyboard */; };
 		35F261E3283250BE00AF7FAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35F261E2283250BE00AF7FAD /* Assets.xcassets */; };
 		35F261E6283250BE00AF7FAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35F261E4283250BE00AF7FAD /* LaunchScreen.storyboard */; };
+		35F261EF28325BC300AF7FAD /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F261EE28325BC300AF7FAD /* AvatarView.swift */; };
+		35F261F128325C4100AF7FAD /* AvatarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35F261F028325C4100AF7FAD /* AvatarView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		35F261E2283250BE00AF7FAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35F261E5283250BE00AF7FAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35F261E7283250BE00AF7FAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35F261EE28325BC300AF7FAD /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
+		35F261F028325C4100AF7FAD /* AvatarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AvatarView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,25 @@
 		35F261D8283250BB00AF7FAD /* Exam 1 */ = {
 			isa = PBXGroup;
 			children = (
+				35F261ED28325B8200AF7FAD /* Custom View */,
 				35F261D9283250BB00AF7FAD /* AppDelegate.swift */,
 				35F261DB283250BB00AF7FAD /* SceneDelegate.swift */,
 				35F261DD283250BB00AF7FAD /* ViewController.swift */,
 				35F261DF283250BB00AF7FAD /* Main.storyboard */,
-				35F261E2283250BE00AF7FAD /* Assets.xcassets */,
 				35F261E4283250BE00AF7FAD /* LaunchScreen.storyboard */,
+				35F261E2283250BE00AF7FAD /* Assets.xcassets */,
 				35F261E7283250BE00AF7FAD /* Info.plist */,
 			);
 			path = "Exam 1";
+			sourceTree = "<group>";
+		};
+		35F261ED28325B8200AF7FAD /* Custom View */ = {
+			isa = PBXGroup;
+			children = (
+				35F261EE28325BC300AF7FAD /* AvatarView.swift */,
+				35F261F028325C4100AF7FAD /* AvatarView.xib */,
+			);
+			path = "Custom View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				35F261E6283250BE00AF7FAD /* LaunchScreen.storyboard in Resources */,
+				35F261F128325C4100AF7FAD /* AvatarView.xib in Resources */,
 				35F261E3283250BE00AF7FAD /* Assets.xcassets in Resources */,
 				35F261E1283250BB00AF7FAD /* Main.storyboard in Resources */,
 			);
@@ -139,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				35F261DE283250BB00AF7FAD /* ViewController.swift in Sources */,
+				35F261EF28325BC300AF7FAD /* AvatarView.swift in Sources */,
 				35F261DA283250BB00AF7FAD /* AppDelegate.swift in Sources */,
 				35F261DC283250BB00AF7FAD /* SceneDelegate.swift in Sources */,
 			);

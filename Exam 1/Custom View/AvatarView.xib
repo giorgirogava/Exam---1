@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AvatarView" customModule="Exam_1" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="aWI-UM-CeR">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Endurance" translatesAutoresizingMaskIntoConstraints="NO" id="9K4-Od-bHS">
+                    <rect key="frame" x="25" y="25" width="150" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="Cki-yx-08e"/>
+                        <constraint firstAttribute="width" constant="150" id="Esx-nw-35F"/>
+                        <constraint firstAttribute="height" constant="150" id="dNw-8l-wmw"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TeJ-UX-mrL">
+                    <rect key="frame" x="226" y="68" width="140" height="65"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Click here">
+                        <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                    </buttonConfiguration>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="iFo-Y5-TGi"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="9K4-Od-bHS" firstAttribute="top" secondItem="aWI-UM-CeR" secondAttribute="top" constant="25" id="6jj-TW-pOX"/>
+                <constraint firstAttribute="trailing" secondItem="TeJ-UX-mrL" secondAttribute="trailing" constant="48" id="7yC-L5-YFy"/>
+                <constraint firstAttribute="bottom" secondItem="9K4-Od-bHS" secondAttribute="bottom" constant="25" id="KJO-II-VdD"/>
+                <constraint firstAttribute="height" constant="200" id="VOh-rT-nYS"/>
+                <constraint firstAttribute="bottom" secondItem="TeJ-UX-mrL" secondAttribute="bottom" constant="67" id="XjS-k7-aRa"/>
+                <constraint firstItem="TeJ-UX-mrL" firstAttribute="top" secondItem="aWI-UM-CeR" secondAttribute="top" constant="68" id="cYr-E7-Bfa"/>
+                <constraint firstItem="9K4-Od-bHS" firstAttribute="leading" secondItem="aWI-UM-CeR" secondAttribute="leading" constant="25" id="ldL-0t-eGW"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="317.39130434782612" y="108.48214285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Endurance" width="638" height="1135"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
