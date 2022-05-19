@@ -5,42 +5,52 @@ import UIKit
 class AvatarView:UIView{
     
     
-    @IBOutlet weak var imageAvatar: UIImageView!
+    @IBOutlet weak var imageView:UIImageView!
     
+    private let colors:[UIColor] = [.red, .cyan, .green]
+    private var currentColorIndex:Int = .zero
     
-    @IBAction func didTap(_ sender: Any) {
-        
+    @IBAction func buttonDidTap(){
+        imageView.backgroundColor = colors[currentColorIndex]
+        currentColorIndex = (currentColorIndex + 1) % colors.count
         
     }
     
     
-    @IBOutlet var contentView: UIView!
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        commonInit()
+    }
     
-//
-//    override init(frame: CGRect) {
-//        super.init(frame: frame)
-//        setup()
-//    }
-//
-//
-//    required init?(coder: NSCoder) {
-//        super.init(coder: coder)
-//        setup()
-//    }
-//
-//
-//
-//    func setup() {
-//
-//        Bundle.main.loadNibNamed("AvatarView", owner: self)
-//        self.addSubview(contentView)
-//
-//
-////        contentView.translatesAutoresizingMaskIntoConstraints = true
-//        contentView.frame = self.frame
-//
-//
-//    }
-//
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        commonInit()
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        imageView.layer.cornerRadius = imageView.frame.width / 2
+        
+//         imageView?.clipsToBounds = true
+//         imageView?.layer.borderWidth = 2
+//         imageView?.layer.borderColor = UIColor.white.cgColor
+             
+        
+    }
+
+    private func commonInit(){
+        guard let view = loadNib() else { return }
+        view.frame = self.frame
+        addSubview(view)
+    }
+    
+    func loadNib() -> UIView? {
+        let nib = UINib(nibName: "AvatarView", bundle: nil)
+        let view = nib.instantiate(withOwner: self).first as? UIView
+        return view
+        
+    }
     
 }
