@@ -2,8 +2,6 @@ import UIKit
 
 class AvatarView:UIView{
     
-    
-   
     @IBOutlet weak var imageView:UIImageView!
     
     @IBAction func buttonDidTap(){
