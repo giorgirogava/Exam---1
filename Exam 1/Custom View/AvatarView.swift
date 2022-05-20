@@ -1,20 +1,19 @@
 import UIKit
 
-
-
 class AvatarView:UIView{
     
     
+   
     @IBOutlet weak var imageView:UIImageView!
-    
-    private let colors:[UIColor] = [.red, .cyan, .green]
-    private var currentColorIndex:Int = .zero
     
     @IBAction func buttonDidTap(){
         imageView.backgroundColor = colors[currentColorIndex]
         currentColorIndex = (currentColorIndex + 1) % colors.count
         
     }
+    
+    private let colors:[UIColor] = [.red, .cyan, .green]
+    private var currentColorIndex:Int = .zero
     
     
     override init(frame: CGRect) {
@@ -42,7 +41,7 @@ class AvatarView:UIView{
 
     private func commonInit(){
         guard let view = loadNib() else { return }
-        view.frame = self.frame
+        view.frame = self.bounds
         addSubview(view)
     }
     
